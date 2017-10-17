@@ -11,7 +11,7 @@ module ReactAssetPath
   def self.mapping
     data   = {}
     asset_host = Rails.application.config.asset_host
-    image_files = File.join("**", "*.{jpg, jpeg, png, ico, svg}")
+    image_files = File.join("**", "*.{jpg,jpeg,png,ico,svg}")
 
     images_path = Rails.root.join('app/assets/images/')
     images_dir  = images_path.to_s
